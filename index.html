@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>LawSpace</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FreeHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.cO" />
+
+  
+<!--
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+-->
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Prata" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<header role="banner" id="fh5co-header">
+		
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<!-- Mobile Toggle Menu Button -->
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+					<a class="navbar-brand" href="index.html">LAWSPACE</a> 
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+						<li><a href="#" data-nav-section="about"><span>About</span></a></li>
+						<li><a href="#" data-nav-section="practice-areas"><span>Practice Areas</span></a></li>
+						<li><a href="#" data-nav-section="services"><span>Services</span></a></li>
+						<li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
+                        <li><a href="#"><span id="signin">Sign in</span></a></li>
+                        <li><a href="#"><span id="signup">Sign up</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+        
+	</header>
+<div id="body">
+	<section id="fh5co-home" data-section="home" style="background-image: url(images/lady_justice.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="text-wrap">
+				<div class="text-inner">
+					<div class="row">
+                        <form class="col-md-4 col-md-offset-4 to-animate" id="form" style="margin-left: 0 auto; background: white; padding-top: 5%; padding-bottom: 5%; border-radius: 20px; position: fixed; top: 90px; z-index: 99;">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter your password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Enter your password">
+                                </div>
+                                <div class="form-group">
+                                    <a type="submit" href="./client_home.html" class="form-control" style="background: darkgoldenrod; color: whitesmoke; border: 0;"><b>Sign in</b></a>
+                                </div>
+                        </form>
+                        <form class="col-md-4 col-md-offset-4 to-animate" id="signUpLabel" style="margin-left: 0 auto; background: white; padding-top: 5%; padding-bottom: 5%; border-radius: 20px; position: fixed; top: 90px; z-index: 99;">
+                                <div class="form-group">
+                                    <button type="submit" id="clientButton" class="form-control" style="background: darkgoldenrod; color: whitesmoke; border: 0;"><b>Sign up as a client</b></button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" id="lawyerButton" class="form-control" style="background: darkgoldenrod; color: whitesmoke; border: 0;"><b>Sign up as a lawyer</b></button>
+                                </div>
+                        </form>
+                        <form class="col-md-4 col-md-offset-4 to-animate" id="clientForm" style="margin-left: 0 auto; background: white; padding-top: 5%; padding-bottom: 5%; border-radius: 20px; position: fixed; top: 90px; z-index: 99;">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="Last Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="tel" class="form-control" placeholder="Telephone">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <select class="form-control">
+                                        <option>Sex</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="date" class="form-control" placeholder="Date of Birth">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <input type="text" class="form-control" placeholder="Address">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="password" class="form-control" placeholder="Enter password">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="password" class="form-control" placeholder="Confirm password">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <button type="submit" id="clientPage" class="form-control" style="background: darkgoldenrod; color: whitesmoke; border: 0;"><b>Sign up</b></button>
+                                </div>
+                        </form>
+                        <form class="col-md-4 col-md-offset-4 to-animate" id="lawyerForm" style="margin-left: 0 auto; background: white; padding-top: 5%; padding-bottom: 5%; border-radius: 20px; position: fixed; top: 90px; z-index: 99;">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="Last Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="tel" class="form-control" placeholder="Telephone">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <select class="form-control">
+                                        <option>Sex</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="date" class="form-control" placeholder="Date of Birth">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <input type="text" class="form-control" placeholder="Address">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <select class="form-control">
+                                        <option>Practice Area</option>
+                                        <option>Criminal Law</option>
+                                        <option>Real Estate and Property Law</option>
+                                        <option>Land Law</option>
+                                        <option>Family Law</option>
+                                        <option>Contract Law</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="NBA ID">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="password" class="form-control" placeholder="Enter password">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="password" class="form-control" placeholder="Confirm password">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" id="lawyerPage" class="form-control" style="background: darkgoldenrod; color: whitesmoke; border: 0;"><b>Sign up</b></button>
+                                </div>
+                        </form>
+						<div class="col-md-10 col-md-offset-1 to-animate"> 
+							<h1>Welcome to Lawspace</h1>
+							<h2>Connecting lawyers and clients </h2>
+							<div class="call-to-action">
+								<a href="#" class="download">Need a lawyer?</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="fh5co-about" data-section="about" style="background-color: whitesmoke;">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-7 col-md-pull-1">
+					<img src="images/gavel.jpg" class="img-shadow img-responsive" alt="Free HTML5 Bootstrap Template">
+				</div>
+				<div class="col-md-5">
+					<h2>About Us</h2>
+					<p class="lead"><p>LawSpace is a platform designed to connect prospective clients to preferred lawyers. The platform makes the connection faster and easier, creating an avenue for practicing lawyers to expand their practice and also ensuring the utmost satisfaction of our clients/users.</p>
+                    <p>Lawspace offers lawyers in the following practice Areas:</p>
+
+					<ul class="list-nav">
+						<li><i class="icon-check2"></i>Criminal Law</li>
+						<li><i class="icon-check2"></i>Contract Law</li>
+						<li><i class="icon-check2"></i>Real Estate and Property Law</li>
+						<li><i class="icon-check2"></i>Family Law</li>
+						<li><i class="icon-check2"></i>Land Law</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+        
+        <!-- the meet the team section -->
+    <section id="fh5co-team" style="background-color: whitesmoke;">
+		<div class="fh5co-team">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="to-animate">Meet The Team</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 subtext">
+								<h3 class="to-animate">These are the awesome people who created Lawspace.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="img/golden%20(1).JPG" alt="Idikibiebuma Golden (Project Manager)"></div>
+							<h3>Idikibiebuma Golden</h3>
+							<span class="position">Project Manager</span>
+							<p>He holds a Bachelor degree in Biochemistry from the University of Nigeria Nsukka. Equipped with innate leadership and managerial skills, he takes on the chief responsibility of planning, controlling, monitoring and successfully executing this project.</p>
+							<ul class="social-media">
+								<li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
+								<li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="img/fero.jpg" alt="Oloyede Oyekunle (Web Designer)"></div>
+							<h3>Oloyede Oyekunle</h3>
+							<span class="position">Web Designer</span>
+							<p>He holds a Higher National Diploma in Mechanical Engineering from Lagos State Polytechnic. Kunle brings to LawSpace a solid and extensive background in software and website development and programming technology which has been instrumental in building and managing the website.</p>
+							<ul class="social-media">
+								<li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
+								<li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="img/jane.jpg" alt="Jane Oragwa (Financial Analyst)"></div>
+							<h3>Jane Oragwa</h3>
+							<span class="position">Financial Analyst</span>
+							<p>She holds a Bachelors Degree in Chemica Engineering from Anambra State University. While this might be her profession, Miss Jane has a natural eye for the numbers. Being from the eastern part of Nigeria,it is no wonder how she has a natural flair for numbers.  This is why she handles LawSpace's finances.
+</p>
+							<ul class="social-media">
+								<li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
+								<li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+            <br />
+            <div class="container" style="padding-top: 3%;">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="img/theola.jpg" alt="Amiokhaibhior Theola (Content Developer)"></div>
+							<h3>Amiokhaibhior Theola</h3>
+							<span class="position">Content Developer</span>
+							<p>She is a current 300-level English and Literature student in the University of Benin. She possesses creative and of course, writing ability with which she creates, edits and occasionally updates content on the webpage.</p>
+							<ul class="social-media">
+								<li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
+								<li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+
+                    <div class="col-md-3">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="img/kunle.jpg" alt="Jesuferani Fatoye (Web Designer)"></div>
+							<h3>Jesuferani Fatoye</h3>
+							<span class="position">Web Designer</span>
+							<p>He have high passion and taste for technology,he have gone far and wide on improving his skill on website development and other maching language development program.</p>
+							<ul class="social-media">
+								<li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
+								<li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+                    
+					<div class="col-md-3">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="img/eniola.jpg" alt="Sekoni Eniola (Project Researcher)"></div>
+							<h3>Sekoni Eniola</h3>
+							<span class="position">Project Manager</span>
+							<p>She is a current 500-level law student in the Univerist of Lagos. With a prospective law degree to her name, she serves as the go-between between the legal world and the website ensuring the effectiveness and validity of LawSpace in offering her services.</p>
+							<ul class="social-media">
+								<li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
+								<li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="img/provo.jpg" alt="Iyenoma Provo"></div>
+							<h3>Iyenoma Provo</h3>
+							<span class="position">Web Developer</span>
+							<p>He is curently on his Higher National Diploma program in Auchi polytechnic in the Department of Computer Science. He has great passion for technology.
+</p>
+							<ul class="social-media">
+								<li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
+								<li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	</section>
+
+
+	<section id="fh5co-explore" data-section="practice-areas" style="background-color: whitesmoke; padding-top: 0%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">Practice Areas</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>Lawspace offers lawyers in these practice areas</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-pull-1 to-animate-3">
+						<img class="img-responsive" src="images/services.jpg" alt="Free HTML5 Bootstrap Template">
+                        <img width="85%"class="img-responsive" src="images/lady_blue.jpg" alt="Free HTML5 Bootstrap Template">
+					</div>
+					<div class="col-md-4 to-animate-3">
+						<div class="mt">
+							<div>
+								<h4><i class="icon-shield"></i>Criminal Law</h4>
+								<p> The body of law which regulates the repression of crime; prohibition of specified conduct which, in the view of the government, as expressed by statute, interferes with the peace and good order of society to the extent that the proof of such conduct will result in criminal punishment upon the transgressor, in either a fine or a denial of liberty (eg. jail; incarceration).</p>
+							</div>
+							<div>
+								<h4><i class="icon-shield"></i>Contract law</h4>
+								<p>Contract law is the body of law that relates to making and enforcing agreements. A contract is an agreement that a party can turn to a court to enforce. Contract law is the area of law that governs making contracts, carrying them out and fashioning a fair remedy when there’s a breach. Anyone who conducts business uses contract law. </p>
+							</div>
+							<div>
+								<h4><i class="icon-shield"></i>Real Estate and Property Law</h4>
+								<p>Real Estate and Property Law includes a wide range of topics, such as buying, selling, using, and leasing residential or commercial property. Common Real Estate and Property Law disputes involve establishing property title and boundary lines, landlord and tenant disputes, and zoning/land use issues. Real estate and property law also comprises the financing aspects of property, such as mortgages, liens, and foreclosures.</p>
+							</div>
+							<div>
+								<h4><i class="icon-shield"></i>Land Law</h4>
+								<p>Land law is the form of law that deals with the rights to use, alienate, or exclude others from land. In many jurisdictions, these kinds of property are referred to as real estate or real property, as distinct from personal property. Land use agreements, including renting, are an important intersection of property and contract law. Encumbrance on the land rights of one, such as an easement, may constitute the land rights of another. Mineral rights and water rights are closely linked, and often interrelated concepts. </p>
+							</div>
+							<div>
+								<h4><i class="icon-shield"></i>Family Law</h4>
+								<p>Family law is a legal practice area that focuses on issues involving family relationships, such as adoption, divorce, and child custody, among others. Attorneys practicing family law can represent clients in family court proceedings or in related negotiations and can also draft important legal documents such as court petitions or property agreements. Some family law attorneys even specialize in adoption, paternity, emancipation, or other matters not usually related to divorce.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	
+	<section id="fh5co-services" data-section="services" style="background-color: whitesmoke; padding-top: 0%">
+		<div class="fh5co-services">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="to-animate">Services</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 subtext">
+								<h3 class="to-animate">We make assess to legal services easy by offering the following services</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="box-services">
+							<i class="icon-shield to-animate-2"></i>
+							<div class="fh5co-post to-animate">
+                                <h3><a href="./client_home.html">Find A Lawyer</a></h3>
+								<p>Need legal representation urgently and you dont know where to turn to for a lawyer? Thats why we are here. We help you find the lawyers you need in specific practice areas and also strategic locations!</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="box-services">
+							<i class="icon-shield to-animate-2"></i>
+							<div class="fh5co-post to-animate">
+                                <h3><a href="./post_case.html">Post Cases</a></h3>
+								<p>Not really sure what it is you want? Throw your case out into the world of lawyers and track lawyers anxious to take up your case and make your own choice.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="box-services">
+							<i class="icon-shield to-animate-2"></i>
+							<div class="fh5co-post to-animate">
+								<h3>Ask a Lawyer</h3>
+								<p>Are you in a tight spot and need to be enlightened on the provisions made for you in the Nigerian constitution? Ask the law and get references from the law firsthand.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+
+
+	<section id="fh5co-footer" data-section="contact" role="contentinfo" style="background-color: whitesmoke; padding-top: 0%">
+		<div class="getting-started getting-started-1">
+            <div class="container">
+                <div class="row">
+                    <h2 class="to-animate" style="color: whitesmoke;"><span class="glyphicon glyphicon-send"></span> Subscribe to get updates</h2>
+                    <form class="form-inline text-right">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" id="subscribeButton" class="form-control" style="background: darkgoldenrod; color: whitesmoke; border: 0;">Subscribe</button>
+                        </div>
+                    </form>
+                    <h5 id="subscribeMessage" style="color: whitesmoke;" class="text-right"></h5>
+                </div>
+            </div>
+	   </div>
+        
+        <div class="container">
+            <div class="row">
+				<div class="col-md-12 section-heading text-center" style="padding-top: 10%;">
+				    <h2 class="to-animate">Contact Us</h2>
+				    <div class="row">
+				        <div class="col-md-8 col-md-offset-2 subtext">
+				            <h3 class="to-animate">We would love to hear from you</h3>
+				        </div>
+				    </div>
+				</div>
+            </div>
+            
+			<div class="row">
+				<div class="col-md-6 to-animate">
+					<h3 class="section-title">Our Address</h3>
+					<ul class="contact-info">
+						<li><i class="icon-map-marker"></i>64, Kudirat Abiola Way, Oregun, Ikeja, Lagos</li>
+						<li><i class="icon-phone"></i>+234 80 XXXX XXXX</li>
+						<li><i class="icon-envelope"></i><a href="#">admin@lawspace.ng</a></li>
+						<li><i class="icon-globe2"></i><a href="#">www.lawspace.ng</a></li>
+					</ul>
+					<h3 class="section-title">Connect with Us</h3>
+					<ul class="social-media">
+						<li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
+						<li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
+						<li><a href="#" class="whatsapp"><i class="icon-whatsapp"></i></a></li>
+						<li><a href="#" class="instagram"><i class="icon-instagram"></i></a></li>
+                        <li><a href="#" class="linkedin"><i class="icon-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-6 to-animate">
+					<h3 class="section-title">Drop us a line</h3>
+					<form class="contact-form">
+						<div class="form-group">
+							<label for="name" class="sr-only">Name</label>
+							<input type="name" class="form-control" id="name" placeholder="Name">
+						</div>
+						<div class="form-group">
+							<label for="email" class="sr-only">Email</label>
+							<input type="email" class="form-control" id="email" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<label for="message" class="sr-only">Message</label>
+							<textarea class="form-control" id="message" rows="7" placeholder="Message"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Send Message">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>      
+    <footer class="container text-center" style="background: green; width: 100%;">
+        <h4 style="color: whitesmoke; padding-top: 2%">Copyright &copy; 2018 Lawspace Inc.</h4>
+    </footer>
+	
+<!--	<div id="map" class="fh5co-map"></div>-->
+
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Google Map -->
+<!--
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="js/google_map.js"></script>
+-->
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+    
+	</body>
+</html>
+
