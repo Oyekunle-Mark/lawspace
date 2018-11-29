@@ -12,11 +12,12 @@
 *
 * ======================================================= */
 body {
-  font-family: "Prata", serif;
+  font-family: "arial", sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 20px;
+    text-align: justify;
   line-height: 1.6;
-  color: #616370;
+  color: black;
   background: #26272c;
   height: 100%;
   position: relative;
@@ -301,10 +302,12 @@ img {
   color: #fff;
 }
 #fh5co-home h2 {
-  font-family: "Prata", serif;
-  font-size: 16px !important;
+  font-family: "arial", sans-serif;
+    text-decoration: none;
+  font-size: 32px !important;
   color: white !important;
 }
+
 #fh5co-home a {
   color: rgba(255, 255, 255, 0.8) !important;
   text-decoration: underline;
@@ -338,7 +341,7 @@ img {
   text-align: center;
 }
 #fh5co-home .text-inner h1 {
-  font-size: 38px;
+  font-size: 48px;
   text-transform: uppercase;
   color: white;
   margin: 0 0 20px 0;
@@ -391,7 +394,7 @@ img {
 }
 
 #fh5co-services, #fh5co-testimony, #fh5co-about, #fh5co-explore, #fh5co-faq, #fh5co-team, #fh5co-trusted, #fh5co-footer {
-  padding: 5em 0;
+  padding: 1em 0;
 }
 @media screen and (max-width: 768px) {
   #fh5co-services, #fh5co-testimony, #fh5co-about, #fh5co-explore, #fh5co-faq, #fh5co-team, #fh5co-trusted, #fh5co-footer {
@@ -445,7 +448,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 20px;
   padding-left: 30px;
   margin-bottom: 10px;
   position: relative;
@@ -454,7 +457,7 @@ img {
   position: absolute;
   left: 0;
   top: 0;
-  font-size: 18px;
+  font-size: 24px;
   color: green;
 }
 
@@ -466,7 +469,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 20px;
   padding-left: 30px;
   margin-bottom: 10px;
   position: relative;
@@ -762,6 +765,11 @@ img {
   font-size: 16px;
   text-transform: uppercase;
 }
+
+#fh5co-team .team-box p {
+  text-align: justify;
+}
+
 #fh5co-team .team-box .position {
   font-size: 16px;
   color: black;
@@ -780,7 +788,7 @@ img {
   margin-right: 10px;
 }
 #fh5co-team .team-box .social-media li a {
-  color: black;
+  color: green;
 }
 #fh5co-team .team-box .social-media li a:hover, #fh5co-team .team-box .social-media li a:focus, #fh5co-team .team-box .social-media li a:active {
   text-decoration: none;
@@ -836,7 +844,7 @@ img {
   position: relative;
   display: block;
   padding-bottom: 30px;
-  font-family: "Prata", serif;
+  font-family: "Prata", sans-serif;
 }
 .section-heading h3:after {
   content: "";
@@ -905,14 +913,14 @@ img {
   padding: 0;
 }
 #fh5co-footer .contact-info li {
-  font-size: 14px;
+  font-size: 20px;
   list-style: none;
   margin: 0 0 20px 0;
   position: relative;
   padding-left: 40px;
 }
 #fh5co-footer .contact-info li a {
-  color: green;
+  color: black;
 }
 #fh5co-footer .contact-info li i {
   position: absolute;
@@ -920,7 +928,6 @@ img {
   left: 0;
   font-size: 20px;
   color: green;
-  color: black;
 }
 #fh5co-footer .social-media {
   margin: 0 0 30px 0;

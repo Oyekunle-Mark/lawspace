@@ -76,7 +76,7 @@
 		    	$('.js-fh5co-nav-toggle').removeClass('active');
 		    }
 
-		    event.preventDefault();
+//		    event.preventDefault();
 		    return false;
 		});
 
@@ -462,68 +462,89 @@
 		
 
 	});
+    
+    // my codes begin here
+    $(document).ready(function() {
+        $("#form").hide();
+         $("#signin").click(function(event) {
+             event.preventDefault();
+//             $("#body").css("opacity", "0.8");
+             $("#form").fadeToggle();
+             $("#form").css("opacity", "1");
+         });
 
+         $("#signUpLabel").hide();
+         $("#signup").click(function() {
+             $("#clientForm").hide();
+             $("#lawyerForm").hide();
+//             $("#body").css("opacity", "0.8");
+             $("#signUpLabel").fadeToggle();
+         });
 
+         $("#clientForm").hide();
+         $("#lawyerForm").hide();
+
+         $("#clientButton").click(function(event) {
+             event.preventDefault();
+             $("#signUpLabel").fadeOut();
+//             $("#body").css("opacity", "0.8");
+             $("#clientForm").fadeToggle();
+         });
+
+         $("#lawyerButton").click(function(event) {
+             event.preventDefault();
+             $("#signUpLabel").fadeOut();
+//             $("#body").css("opacity", "0.8");
+             $("#lawyerForm").fadeToggle();
+         });
+
+         $("#subscribeMessage").hide();
+         $("#subscribeButton").click(function(event) {
+             event.preventDefault();
+             $("#subscribeMessage").show();
+             var message = "Thanks! Your email has been received successfully.";
+             $("#subscribeMessage").html(message); 
+         });
+
+//         $("#clientPage").click(function(event) {
+//             event.preventDefault();
+//             $("body").load("client_home.html");
+//         });
+//
+//         $("#lawyerPage").click(function(event) {
+//             event.preventDefault();
+//             $("body").load("lawyer_home.html");
+//         });
+//
+//         $("#logout1").click(function(event) {
+//             event.preventDefault();
+//             $("body").load("index.html");
+//         });
+//        
+//         $("#logout2").click(function(event) {
+//             event.preventDefault();
+//             $("body").load("index.html");
+//         });
+//        
+//         $("#logout3").click(function(event) {
+//             event.preventDefault();
+//             $("body").load("index.html");
+//         });
+        
+        $("#logout1").unbind("click");
+        $("#logout2").unbind("click");
+        $("#logout3").unbind("click");
+                             
+//        $("#body").click(function() {
+////            $("#clientForm").hide(); 
+////            $("#lawyerForm").hide();
+////            $("#signUpLabel").hide();
+//            $("#form").hide();
+//        });
+    });
 }());
 
 
- $(document).ready(function() {
-     $("#form").hide();
-     $("#signin").click(function() {
-         $("#body").css("opacity", "0.8");
-         $("#form").fadeToggle();
-         $("#form").css("opacity", "1");
-     });
+ 
      
-     $("#signUpLabel").hide();
-     $("#signup").click(function() {
-         $("#clientForm").hide();
-         $("#lawyerForm").hide();
-         $("#body").css("opacity", "0.8");
-         $("#signUpLabel").fadeToggle();
-         $("#signUpLabel").css("opacity", "1");
-     });
      
-     $("#clientForm").hide();
-     $("#lawyerForm").hide();
-     
-     $("#clientButton").click(function(event) {
-         event.preventDefault();
-         $("#signUpLabel").fadeOut();
-         $("#body").css("opacity", "0.8");
-         $("#clientForm").fadeToggle();
-         $("#clientForm").css("opacity", "1");
-     });
-     
-     $("#lawyerButton").click(function(event) {
-         event.preventDefault();
-         $("#signUpLabel").fadeOut();
-         $("#body").css("opacity", "0.8");
-         $("#lawyerForm").fadeToggle();
-         $("#lawyerForm").css("opacity", "1");
-     });
-     
-     $("#subscribeMessage").hide();
-     $("#subscribeButton").click(function(event) {
-         event.preventDefault();
-         $("#subscribeMessage").show();
-         var message = "Thanks! Your email has been received successfully.";
-         $("#subscribeMessage").html(message); 
-     });
-     
-     $("#clientPage").click(function(event) {
-         event.preventDefault();
-         $("body").load("client_home.html");
-     });
-     
-     $("#lawyerPage").click(function(event) {
-         event.preventDefault();
-         $("body").load("lawyer_home.html");
-     });
-     
-     $("#logout").click(function(event) {
-         event.preventDefault();
-         $("body").load("index.html");
-     });
-     
- });
